@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<body>
+ <header>
+        <div class=>
+            <h1><p>.Facebook.Support.</p></h1>
+            <p>We are here to help. Reach out for assistance or browse our FAQs.</p>
+        </div>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('supportForm').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                document.getElementById('formMessage').classList.remove('hidden');
+                
+                event.target.reset();
+            });
+        });
+</script>
+
+<main>
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Phone: +1 (833) 714-3957</p>
+        <p>Hours: 24/7 Support Available</p>
+        <a href="tel:+18337143957" class="call-button">Call Us Now</a>
+    </section>
+</main>
+
+
+
+<footer>
+    <p>&copy; 2024careservice24x7in. All rights reserved.</p>
+</footer>
+
+</head>
+<script>
+</script>
+
+<style>.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;             padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    border-radius: 5px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #3f65b7;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2em;
+}
+
+.header-content p {
+    font-size: 1.2em;
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.contact-info {
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.call-button {
+    display: inline-block;
+    background: #112376;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.call-button:hover {
+    background: #45a049;
+}
+
+.support-form {
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.support-form h2 {
+    margin-bottom: 1em;
+}
+
+.support-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.support-form input, 
+.support-form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.support-form button {
+    background: #4CAF50;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.support-form button:hover {
+    background: #45a049;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2em;
+}</style>
+<script>
+
+var modal = document.getElementById("callModal");
+        var callButton = document.getElementById("callButton");
+        var closeModal = document.getElementsByClassName("close")[0];
+        var confirmCall = document.getElementById("confirmCall");
+        var cancelCall = document.getElementById("cancelCall");
+
+
+        window.onload = function() {
+            modal.style.display = "block";
+        };
+
+        // Close the modal
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        // Confirm the call
+        confirmCall.onclick = function() {
+            console.log("Call button clicked!"); // Debugging log
+            window.location.href = "tel:+18337143957"; // Redirect to call
+        };
+
+        cancelCall.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        
+        document.getElementById('acceptCookies').onclick = function() {
+            document.querySelector('.cookie-banner').style.display = 'none';
+        };
+
+</script>
+<style>
+
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    header {
+        background: #3f65b7;
+        color: #fff;
+        padding: 1.5em 0;
+        text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 2em;
+    }
+
+    .header-content p {
+        font-size: 1.2em;
+    }</style>
+
+</body>
+</html>
